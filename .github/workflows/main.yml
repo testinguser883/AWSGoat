@@ -1,0 +1,11 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  gitleaks:
+    uses: rewanthtammana/centralized-workflows/.github/workflows/gitleaks.yml@main
